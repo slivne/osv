@@ -26,6 +26,10 @@
 	path = mgmt
 	url = ../../cloudius-systems/mgmt.git
 	ignore = dirty
+[submodule "apps"]
+	path = apps
+	url = https://github.com/slivne/osv-apps.git 
+	ignore = dirty
 [submodule "external/aarch64/gcc.bin"]
 	path = external/aarch64/gcc.bin
 	url = ../../cloudius-systems/aarch64-gcc.bin.git
