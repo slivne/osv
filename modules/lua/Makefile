@@ -60,7 +60,9 @@ $(DOWNLOAD) $(BUILD) $(LDIR) $(CDIR) $(BDIR):
 LuaRocks_V=2.1.2
 LuaRocks_F=luarocks-$(LuaRocks_V)
 LuaRocks_A=$(LuaRocks_F).tar.gz
-LuaRocks_D=http://luarocks.org/releases/$(LuaRocks_A)
+#LuaRocks_D=http://luarocks.org/releases/$(LuaRocks_A)
+LuaRocks_D=http://pkgs.fedoraproject.org/repo/pkgs/luarocks/luarocks-2.1.2.tar.gz/0afc5fd6ee6ec6128fccda1bc559f41e/$(LuaRocks_A)
+
 
 $(LUA_ROCKS_BIN): $(LUA_BIN) $(BUILD)/$(LuaRocks_F)/src/luarocks
 	cd $(BUILD)/$(LuaRocks_F) && \
