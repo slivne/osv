@@ -26,7 +26,7 @@ from os.path import isfile, join
 
 class ConfigTemplate(Template):
     delimiter = '$$'
-    idpattern = r'[a-z][\-_a-z0-9]*'
+    idpattern = r'[a-z][\.\-_a-z0-9]*'
 #
 # config files
 #
@@ -46,7 +46,7 @@ def config_merge(a,b,path=None):
             a[key] = b[key]
     return a
 
-def config_flatten(d, parent_key='', sep='_'):
+def config_flatten(d, parent_key='', sep='.'):
     items = []
     for k, v in d.items():
         new_key = parent_key + sep + k if parent_key else k
