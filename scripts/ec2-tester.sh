@@ -166,6 +166,9 @@ prepare_instance_for_test() {
 echo "=== Prepare instance for test ==="
 prepare_instance_for_test
 
+echo "=== Allow host to boot ==="
+sleep 120
+
 echo "=== Ping Host ==="
 ping -c 4 $TEST_INSTANCE_IP
 
